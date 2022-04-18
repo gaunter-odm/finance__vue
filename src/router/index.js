@@ -19,6 +19,11 @@ const routes = [
     name: "profile",
     component: ProfileView,
   },
+  {
+    path: "/:pathMatch(.*)",
+    name: "404",
+    component: import("@/views/PageNotFound"),
+  },
 ];
 
 const router = createRouter({
