@@ -7,10 +7,10 @@
       <v-app-bar-title class="ml-5">Finance Web Application</v-app-bar-title>
 
       <v-avatar
-          id="menu-activator"
-          class="cursor-pointer"
-          color="#1867C0"
-          size="30"
+        id="menu-activator"
+        class="cursor-pointer"
+        color="#1867C0"
+        size="30"
       >
         <span>VB</span>
       </v-avatar>
@@ -18,27 +18,27 @@
       <v-menu anchor="start" activator="#menu-activator">
         <v-list density="compact" nav="/" elevation="6" rounded class="pa-2">
           <v-list-item
-              class="mb-1"
-              rounded
-              prepend-icon="mdi-account"
-              title="Профиль"
-              value="profile"
-              to="profile"
+            class="mb-1"
+            rounded
+            prepend-icon="mdi-account"
+            title="Профиль"
+            value="profile"
+            to="profile"
           />
           <v-list-item
-              class="mb-1"
-              rounded
-              :prepend-icon="brightnessIcon"
-              title="Переключить тему"
-              value="toggle-theme"
-              @click="toggleTheme"
+            class="mb-1"
+            rounded
+            :prepend-icon="brightnessIcon"
+            title="Переключить тему"
+            value="toggle-theme"
+            @click="toggleTheme"
           />
           <v-list-item
-              rounded
-              prepend-icon="mdi-logout"
-              title="Выйти"
-              value="logout"
-              to="logout"
+            rounded
+            prepend-icon="mdi-logout"
+            title="Выйти"
+            value="logout"
+            to="logout"
           />
         </v-list>
       </v-menu>
@@ -47,32 +47,32 @@
     <v-navigation-drawer v-model="menu">
       <v-list class="pa-2" density="compact">
         <v-list-item
-            class="pl-3 mb-2"
-            rounded
-            prepend-icon="mdi-home"
-            title="Dashboard"
-            value="home"
-            to="/"
+          class="pl-3 mb-2"
+          rounded
+          prepend-icon="mdi-home"
+          title="Dashboard"
+          value="home"
+          to="/"
         />
         <v-list-item
-            class="pl-3 mb-2"
-            rounded
-            prepend-icon="mdi-shopping"
-            title="Records"
-            value="records"
-            to="records"
+          class="pl-3 mb-2"
+          rounded
+          prepend-icon="mdi-shopping"
+          title="Records"
+          value="records"
+          to="records"
         />
       </v-list>
     </v-navigation-drawer>
 
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import {mapMutations, mapState} from "vuex";
+import { mapMutations, mapState } from "vuex";
 
 export default {
   name: "App",
