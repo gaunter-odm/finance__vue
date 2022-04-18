@@ -16,7 +16,13 @@
       </v-avatar>
 
       <v-menu anchor="start" activator="#menu-activator">
-        <v-list density="compact" nav="/" elevation="6" rounded class="pa-2">
+        <v-list
+          density="compact"
+          :nav="true"
+          elevation="6"
+          rounded
+          class="pa-2"
+        >
           <v-list-item
             class="mb-1"
             rounded
