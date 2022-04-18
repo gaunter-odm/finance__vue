@@ -28,7 +28,7 @@ const routes = [
   {
     path: "/:pathMatch(.*)",
     name: "404",
-    component: import("@/views/PageNotFound"),
+    component: () => import("@/views/PageNotFound"),
   },
 ];
 
