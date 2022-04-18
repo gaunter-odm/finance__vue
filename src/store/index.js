@@ -8,6 +8,7 @@ export default createStore({
   mutations: {
     toggleTheme: (state) =>
       (state.theme = state.theme === "dark" ? "light" : "dark"),
+    setTheme: (state, t) => (state.theme = t),
   },
   actions: {},
   modules: {},
