@@ -88,7 +88,7 @@ export default {
     },
   },
   methods: {
-    ...mapMutations(["toggleTheme"]),
+    ...mapMutations(["toggleTheme", "setTheme"]),
     toggleMenu() {
       this.menu = !this.menu;
     },
