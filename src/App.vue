@@ -51,7 +51,7 @@
     </v-app-bar>
 
     <v-navigation-drawer v-model="menu">
-      <v-list class="pa-2" density="compact">
+      <v-list :nav="true" class="pa-2" density="compact">
         <v-list-item
           class="pl-3 mb-2"
           rounded
