@@ -29,7 +29,7 @@
             prepend-icon="mdi-account"
             title="Профиль"
             value="profile"
-            to="profile"
+            to="/profile"
           />
           <v-list-item
             class="mb-1"
@@ -44,7 +44,7 @@
             prepend-icon="mdi-logout"
             title="Выйти"
             value="logout"
-            to="logout"
+            to="/logout"
           />
         </v-list>
       </v-menu>
@@ -66,7 +66,7 @@
           prepend-icon="mdi-shopping"
           title="Records"
           value="records"
-          to="records"
+          to="/records"
         />
       </v-list>
     </v-navigation-drawer>
