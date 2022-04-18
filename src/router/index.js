@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import RecordsView from "@/views/RecordsView";
 import ProfileView from "@/views/ProfileView";
+import LoginView from "@/views/LoginView";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/profile",
     name: "profile",
     component: ProfileView,
+  },
+  {
+    path: "/auth/login/:magikLink",
+    name: "login",
+    component: LoginView,
   },
   {
     path: "/:pathMatch(.*)",
