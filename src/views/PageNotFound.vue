@@ -1,6 +1,7 @@
 <template>
   <div class="page_404">
     <h1>404</h1>
+    <v-btn to="/">Главная</v-btn>
   </div>
 </template>
 
