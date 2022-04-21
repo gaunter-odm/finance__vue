@@ -120,4 +120,12 @@ export default {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.app_loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 </style>
