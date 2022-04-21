@@ -39,6 +39,22 @@ const routes = [
     path: "/auth/login",
     name: "Login",
     component: LoginView,
+    beforeEnter: loginGuard,
+    children: [
+      {
+        path: ":magikLink",
+        component: LoginView,
+      },
+    ],
+  },
+  {
+    path: "/auth/logout",
+    name: "Logout",
+    component: Logout,
+    beforeEnter: authGuard,
+    meta: {
+      roles: ["admin", "user"],
+    },
   },
   {
     path: "/:pathMatch(.*)",
