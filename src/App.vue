@@ -1,5 +1,9 @@
 <template>
   <v-app :theme="theme">
+    <v-overlay content-class="app_loader" v-model="loader" :persistent="true">
+      <v-progress-circular width="8" :indeterminate="true" size="150" />
+    </v-overlay>
+
     <v-app-bar app>
       <v-app-bar-nav-icon @click="toggleMenu">
         mdi-hamburger-menu
