@@ -3,6 +3,9 @@ import HomeView from "../views/HomeView.vue";
 import RecordsView from "@/views/RecordsView";
 import ProfileView from "@/views/ProfileView";
 import LoginView from "@/views/LoginView";
+import Logout from "@/views/Logout.view";
+import { authGuard } from "@/router/guards/auth.guard";
+import { loginGuard } from "@/router/guards/login.guard";
 
 const routes = [
   {
