@@ -7,22 +7,22 @@ import LoginView from "@/views/LoginView";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "Home",
     component: HomeView,
   },
   {
     path: "/records",
-    name: "records",
+    name: "Records",
     component: RecordsView,
   },
   {
     path: "/profile",
-    name: "profile",
+    name: "Profile",
     component: ProfileView,
   },
   {
-    path: "/auth/login/:magikLink",
-    name: "login",
+    path: "/auth/login",
+    name: "Login",
     component: LoginView,
   },
   {
