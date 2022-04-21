@@ -92,7 +92,12 @@ export default {
   }),
 
   computed: {
-    ...mapState(["theme"]),
+    ...mapState({
+      theme: (state) => state.theme,
+      user: (state) => state.auth.user,
+      loader: (state) => state.loader.loader,
+    }),
+
     brightnessIcon() {
       return this.theme === "light" ? "mdi-brightness-4" : "mdi-brightness-5";
     },
