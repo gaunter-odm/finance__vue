@@ -16,7 +16,7 @@
         color="#1867C0"
         size="30"
       >
-        <span>VB</span>
+        <span>{{ avatar }}</span>
       </v-avatar>
 
       <v-menu anchor="start" activator="#menu-activator">
