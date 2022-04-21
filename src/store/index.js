@@ -1,4 +1,7 @@
 import { createStore } from "vuex";
+import { authPlugin } from "@/store/plugins/auth.plugin";
+import { auth } from "@/store/modules/auth.module";
+import { loader } from "@/store/modules/loader.module";
 
 export default createStore({
   state: {
@@ -11,5 +14,6 @@ export default createStore({
     setTheme: (state, themeName) => (state.theme = themeName),
   },
   actions: {},
-  modules: {},
+  modules: { auth, loader },
+  plugins: [authPlugin],
 });
