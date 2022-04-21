@@ -9,16 +9,28 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomeView,
+    meta: {
+      roles: ["admin", "user"],
+    },
+    beforeEnter: authGuard,
   },
   {
     path: "/records",
     name: "Records",
     component: RecordsView,
+    meta: {
+      roles: ["admin", "user"],
+    },
+    beforeEnter: authGuard,
   },
   {
     path: "/profile",
     name: "Profile",
     component: ProfileView,
+    meta: {
+      roles: ["admin", "user"],
+    },
+    beforeEnter: authGuard,
   },
   {
     path: "/auth/login",
