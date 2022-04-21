@@ -5,7 +5,7 @@
     </v-overlay>
 
     <v-app-bar app>
-      <v-app-bar-nav-icon @click="toggleMenu">
+      <v-app-bar-nav-icon :disabled="disableMenu" @click="toggleMenu">
         mdi-hamburger-menu
       </v-app-bar-nav-icon>
       <v-app-bar-title class="ml-5">Finance Web Application</v-app-bar-title>
