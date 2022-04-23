@@ -13,7 +13,7 @@
       <v-avatar
         id="menu-activator"
         class="cursor-pointer"
-        color="#1867C0"
+        color="indigo"
         size="30"
       >
         <span>{{ avatar }}</span>
