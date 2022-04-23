@@ -134,10 +134,6 @@ export default {
       loader: (state) => state.loader.loader,
     }),
 
-    brightnessIcon() {
-      return this.theme === "light" ? "mdi-brightness-4" : "mdi-brightness-5";
-    },
-
     avatar() {
       return this.user.name ? this.user.name.substring(0, 1) : "A";
     },
