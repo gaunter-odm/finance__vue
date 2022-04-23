@@ -156,11 +156,6 @@ export default {
       this.menu = !this.menu;
     },
   },
-
-  created() {
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    this.setTheme(isDark ? "dark" : "light");
-  },
 };
 </script>
 
