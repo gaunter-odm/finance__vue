@@ -136,7 +136,7 @@ export default {
     }),
 
     avatar() {
-      return this.user.name ? this.user.name.substring(0, 1) : "A";
+      return this.user.name ? this.user.name.substring(0, 1) : "";
     },
 
     disableMenu() {
