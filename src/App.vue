@@ -36,13 +36,45 @@
             to="/profile"
           />
           <v-list-item
+            id="theme-submenu"
             class="mb-1"
             rounded
-            :prepend-icon="brightnessIcon"
-            title="Переключить тему"
-            value="toggle-theme"
-            @click="toggleTheme"
+            prepend-icon="mdi-compare"
+            title="Тема"
+            value="toggle-value"
           />
+
+          <v-menu
+            activator="#theme-submenu"
+            anchor="start"
+            transition="slide-y-transition"
+          >
+            <v-list density="compact" elevation="6" rounded class="pa-2">
+              <v-list-item
+                rounded
+                title="Темная"
+                prepend-icon="mdi-brightness-4"
+                value="system"
+                @click="setTheme('dark')"
+              />
+              <v-list-item
+                rounded
+                title="Светлая"
+                prepend-icon="mdi-brightness-5"
+                value="light"
+                @click="setTheme('light')"
+              />
+              <v-list-item
+                v-if="systemThemeSupport"
+                rounded
+                title="Системная"
+                prepend-icon="mdi-brightness-6"
+                value="dark"
+                @click="setTheme('system')"
+              />
+            </v-list>
+          </v-menu>
+
           <v-list-item
             rounded
             prepend-icon="mdi-logout"
