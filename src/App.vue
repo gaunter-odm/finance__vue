@@ -132,6 +132,7 @@ export default {
       theme: (state) => state.theme,
       user: (state) => state.auth.user,
       loader: (state) => state.loader.loader,
+      systemThemeSupport: (state) => state.theme.supportSystemTheme,
     }),
 
     avatar() {
