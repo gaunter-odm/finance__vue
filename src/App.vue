@@ -19,7 +19,11 @@
         <span>{{ avatar }}</span>
       </v-avatar>
 
-      <v-menu anchor="start" activator="#menu-activator">
+      <v-menu
+        transition="slide-y-transition"
+        anchor="start"
+        activator="#menu-activator"
+      >
         <v-list
           density="compact"
           :nav="true"
