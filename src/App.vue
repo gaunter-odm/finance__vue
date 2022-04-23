@@ -118,7 +118,7 @@
 </template>
 
 <script>
-import { mapMutations, mapState } from "vuex";
+import { mapActions, mapState } from "vuex";
 
 export default {
   name: "App",
@@ -150,7 +150,7 @@ export default {
   },
 
   methods: {
-    ...mapMutations(["toggleTheme", "setTheme"]),
+    ...mapActions(["setTheme"]),
     toggleMenu() {
       this.menu = !this.menu;
     },
