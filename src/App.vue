@@ -129,7 +129,7 @@ export default {
 
   computed: {
     ...mapState({
-      theme: (state) => state.theme,
+      theme: (state) => state.theme.value,
       user: (state) => state.auth.user,
       loader: (state) => state.loader.loader,
       systemThemeSupport: (state) => state.theme.supportSystemTheme,
