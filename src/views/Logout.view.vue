@@ -12,13 +12,11 @@ export default defineComponent({
   methods: mapMutations(["logout", "enableLoader", "disableLoader"]),
   mounted() {
     this.enableLoader();
-    axios
-      .get("auth/logout")
-      .then(() => {
-        this.logout();
-        this.$router.push({ name: "Login" });
-      })
-      .finally(() => this.disableLoader());
+    axios.get("auth/logout").finally(() => {
+      this.logout();
+      this.$router.push({ name: "Login" });
+      this.disableLoader();
+    });
   },
 });
 </script>
